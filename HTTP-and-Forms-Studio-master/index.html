@@ -1,0 +1,35 @@
+<!doctype html>
+
+<head>
+	<meta charset="utf-8">
+	<script>
+		function setSearchEngine(){
+			let studioForm = document.querySelector("input[name=engine]:checked");
+			document.getElementById("searchForm").setAttribute("action", studioForm.value)
+		}
+    window.addEventListener("load", function(){
+        form.addEventListener("submit", function(setSearchEngine) {
+        
+		})
+    });
+	</script>
+</head>
+
+<body>
+
+	<form id="searchForm" onsubmit="setSearchEngine()">
+		<input type="text" name="q"/>
+		<label>Google
+			<input type="radio" name="engine" value="https://www.google.com/search"/>
+		</label>
+		<label>DuckDuckGo
+			<input type="radio" name="engine" value="https://duckduckgo.com/"/> 
+		</label>
+		<label>Bing
+			<input type="radio" name="engine" value="https://www.bing.com/search"/>
+		</label>
+
+		<input type="submit" value="Go!">
+	</form>
+
+</body>
